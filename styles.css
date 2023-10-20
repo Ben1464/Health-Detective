@@ -4,12 +4,27 @@ body {
     flex-direction: column;
     min-height: 100vh;
     background-color: #e9eef1;
-    margin: 0;
+    margin: 0 auto;  /* This centers the body's content */
     padding: 0;
+    width: 100%;  /* Default width */
     background-repeat: no-repeat;
     background-size: cover;
     background-image: linear-gradient(rgba(255, 255, 255, 0.3), rgba(255, 255, 255, 0.3)), 
     url(./images/photo-1570829460005-c840387bb1ca.avif);
+}
+
+/* For tablets: if the screen width is between 768px and 1024px */
+@media (min-width: 768px) and (max-width: 1024px) {
+    body {
+        width: 90%;  /* Adjust width to your preference */
+    }
+}
+
+/* For desktops: if the screen width is larger than 1024px */
+@media (min-width: 1025px) {
+    body {
+        width: 80%;  /* Adjust width to your preference */
+    }
 }
 
     .calculator {
