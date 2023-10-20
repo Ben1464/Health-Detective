@@ -173,7 +173,7 @@ function populateMealPlan(bmi) {
             </tr>
             <tr>
                 <td>Snack</td>
-                <td>No snack you're cutting weight remember! </td>
+                <td>No snacks,you're cutting weight remember! </td>
             </tr>`;
     }
 
