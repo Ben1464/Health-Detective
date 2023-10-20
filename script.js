@@ -42,14 +42,14 @@ function provideFeedback(name, bmi, tdee) {
     let activityAdvice = "";
 
     if (bmi < 18.5) {
-        caloricAdvice += "Considering your underweight status, it's essential to focus on a nutrient-rich diet that aligns with your TDEE of approximately " + tdee.toFixed(2) + " calories.";
+        caloricAdvice += "Considering your underweight status, it's essential to focus on a nutrient-rich diet that aligns with your TDEE of approximately " + tdee.toFixed(2) + " calories.Increase your generall food intake.";
         bmiAdvice = "Based on your BMI, you're underweight.";
         riskAdvice = "Predisposed risks: Weakened immune system, Osteoporosis, Anemia. Consult a health professional for further diagnistics.";
         hospitalAdvice = "For further medical assistance, consider visiting these hospitals in Kenya:\n- Nairobi Hospital, Nairobi\n- Aga Khan University Hospital, Nairobi\n- Kenyatta National Hospital, Nairobi\n- Mombasa Hospital, Mombasa\n- Eldoret Hospital, Eldoret\n\nRemember to schedule an appointment and verify availability of relevant specialists.";
     } else if (bmi >= 18.5 && bmi < 24.9) {
         caloricAdvice += "As you're in a healthy weight range, ensure you're maintaining a balanced diet,working out and avoiding stress " + tdee.toFixed(2) + " calories.";
         bmiAdvice = "Based on your BMI, you're within the normal weight range.";
-        riskAdvice = "Typically associated with the lowest health risks. Maintain a balanced diet and active lifestyle.LIVE!";
+        riskAdvice = "Within the healthy weight range you are associated with the lowest health risks. Maintain a balanced diet and active lifestyle.LIVE!";
     } else if (bmi >= 25 && bmi < 29.9) {
         caloricAdvice += "Being overweight, it's crucial to watch your diet, stop taking junk food and be more active (workout) " + tdee.toFixed(2) + " calories, and incorporate regular exercise.";
         bmiAdvice = "Based on your BMI, you're overweight.";
@@ -59,7 +59,7 @@ function provideFeedback(name, bmi, tdee) {
         caloricAdvice += "You are obesed! focus on a well-balanced calorie-restricted diet below your TDEE of " + tdee.toFixed(2) + " Cutting down calories can help in achieving a healthier weight. Consultation with a nutritionist or doctor would be beneficial.";
         bmiAdvice = "Based on your BMI, you're OBESSED my friend!.";
         riskAdvice = "Predisposed risks: Heart diseases, Certain cancers, Liver disease. STOP taking junk food, cut down on sugar, start fasting,intermintent fastings,join a gym before you become a liablity to your own self.";
-        hospitalAdvice = "For further medical assistance, consider visiting these hospitals in Kenya:\n- Nairobi Hospital, Nairobi\n- Aga Khan University Hospital, Nairobi\n- Kenyatta National Hospital, Nairobi\n- Mombasa Hospital, Mombasa\n- Eldoret Hospital, Eldoret\n\nRemember to schedule an appointment and verify availability of relevant specialists.";
+        hospitalAdvice = "For further medical assistance, consider visiting these hospitals in Kenya:\n- Nairobi Hospital, Nairobi\n- Aga Khan University Hospital, Nairobi\n- Kenyatta National Hospital, Nairobi\n- Mombasa Hospital, Mombasa\n- Eldoret Hospital, Eldoret\n\nRemember to schedule an appointment and verify availability of relevant specialists. DO FORGET GYM SUBSCRIPTION!";
     }
 
     caloricAdviceElem.innerText = caloricAdvice;
@@ -104,7 +104,7 @@ function populateMealPlan(bmi) {
         mealPlanContent = `
             <tr>
                 <td>Breakfast</td>
-                <td>2 Kienyeji eggs and a banana smoothie.</td>
+                <td>2 Kienyeji eggs,arrowroots or sweetpotatoes and a banana smoothie.</td>
             </tr>
             <tr>
                 <td>Lunch</td>
@@ -142,7 +142,7 @@ function populateMealPlan(bmi) {
         mealPlanContent = `
             <tr>
                 <td>Breakfast</td>
-                <td> Sugarless black cofee ONLY.</td>
+                <td> Sugarless black cofee/Green tea ONLY.</td>
             </tr>
             <tr>
                 <td>Lunch</td>
@@ -161,7 +161,7 @@ function populateMealPlan(bmi) {
         mealPlanContent = `
             <tr>
                 <td>Breakfast</td>
-                <td>Sugarless black coffee/greentea.</td>
+                <td>Sugarless black coffee/green tea.</td>
             </tr>
             <tr>
                 <td>Lunch</td>
