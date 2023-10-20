@@ -1,0 +1,176 @@
+body {
+    font-family: 'Arial', sans-serif;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+    background-color: #e9eef1;
+    margin: 0;
+    padding: 0;
+}
+
+.calculator {
+    background: #ffffff;
+    padding: 25px 35px;
+    border-radius: 8px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+    width: 90%;
+    max-width: 480px;
+    margin: 20px auto;
+}
+
+h2 {
+    color: #2c3e50;
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+.input-group {
+    margin-bottom: 20px;
+}
+
+label {
+    display: block;
+    font-weight: 600;
+    margin-bottom: 6px;
+    color: #34495e;
+}
+
+input, select, button {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #bdc3c7;<!DOCTYPE html>
+    <html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Health Mate</title>
+        <link rel="stylesheet" href="styles.css">
+    </head>
+    <body>
+        <main class="calculator">
+            <h2>Health Detective</h2>
+            <form id="estimatorForm">
+                <div class="input-group">
+                    <label for="name">Name:</label>
+                    <input type="text" id="name" required placeholder="Enter your name">
+                </div>
+                <div class="input-group">
+                    <label for="age">Age:</label>
+                    <input type="number" id="age" required>
+                </div>
+                <div class="input-group">
+                    <label for="gender">Gender:</label>
+                    <select id="gender" required>
+                        <option value="male">Male</option>
+                        <option value="female">Female</option>
+                    </select>
+                </div>
+                <div class="input-group">
+                    <label for="weight">Weight (kg):</label>
+                    <input type="number" id="weight" required>
+                </div>
+                <div class="input-group">
+                    <label for="height">Height (cm):</label>
+                    <input type="number" id="height" required>
+                </div>
+                <div class="input-group">
+                    <label for="activityLevel">Activity Level:</label>
+                    <select id="activityLevel" required>
+                        <option value="1.2">Sedentary</option>
+                        <option value="1.375">Lightly active</option>
+                        <option value="1.55">Moderately active</option>
+                        <option value="1.725">Very active</option>
+                        <option value="1.9">Super active</option>
+                    </select>
+                </div>
+                <button type="submit">Calculate</button>
+            </form>
+            <section id="output">
+                <div id="caloric-advice" class="health-advice"></div>
+                <div id="bmi-advice" class="bmi-advice"></div>
+                <div id="risk-advice" class="risk-advice"></div>
+                <div id="hospital-advice" class="hospital-advice"></div>
+                <div id="activity-advice" class="activity-advice"></div>
+            </section>
+        </main>
+        <footer>
+            <p>&copy; 2023 Health<span>Mate. Developed with ❤️ by Benson<span>Mwangi </p>
+        </footer>
+        <script src="script.js"></script>
+    </body>
+    </html>
+    border-radius: 5px;
+    font-size: 1em;
+    outline: none;
+    transition: border-color 0.3s;
+}
+
+input:focus, select:focus {
+    border-color: #3498db;
+}
+
+button {
+    background-color: #3498db;
+    color: #ecf0f1;
+    cursor: pointer;
+    transition: background-color 0.3s;
+    margin-top: 10px;
+}
+
+button:hover {
+    background-color: #2980b9;
+}
+
+#output {
+    margin-top: 30px;
+}
+
+.health-advice, 
+.bmi-advice, 
+.activity-advice, 
+.risk-advice, 
+.hospital-advice {
+    padding: 15px;
+    border-radius: 5px;
+    margin-top: 10px;
+    color: #ffffff;
+    line-height: 1.5;
+}
+
+.health-advice {
+    background-color: #f39c12;
+}
+
+.bmi-advice {
+    background-color: #2ecc71;
+}
+
+.activity-advice {
+    background-color: #3498db;
+}
+
+.risk-advice {
+    background-color: #e74c3c;
+}
+
+.hospital-advice {
+    background-color: #9b59b6;
+}
+
+main {
+    flex: 1 0 auto;
+}
+
+footer {
+    flex-shrink: 0;
+    width: 100%;
+    padding: 15px 0;
+    background-color: #34495e;
+    color: #ecf0f1;
+    text-align: center;
+}
+
+footer span {
+    color: #f39c12;
+    font-weight: bold;
+}

@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Health Mate</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <main class="calculator">
+        <h2>Health Detective</h2>
+        <form id="estimatorForm">
+            <div class="input-group">
+                <label for="name">Name:</label>
+                <input type="text" id="name" required placeholder="Enter your name">
+            </div>
+            <div class="input-group">
+                <label for="age">Age:</label>
+                <input type="number" id="age" required>
+            </div>
+            <div class="input-group">
+                <label for="gender">Gender:</label>
+                <select id="gender" required>
+                    <option value="male">Male</option>
+                    <option value="female">Female</option>
+                </select>
+            </div>
+            <div class="input-group">
+                <label for="weight">Weight (kg):</label>
+                <input type="number" id="weight" required>
+            </div>
+            <div class="input-group">
+                <label for="height">Height (cm):</label>
+                <input type="number" id="height" required>
+            </div>
+            <div class="input-group">
+                <label for="activityLevel">Activity Level:</label>
+                <select id="activityLevel" required>
+                    <option value="1.2">Sedentary</option>
+                    <option value="1.375">Lightly active</option>
+                    <option value="1.55">Moderately active</option>
+                    <option value="1.725">Very active</option>
+                    <option value="1.9">Super active</option>
+                </select>
+            </div>
+            <button type="submit">Calculate</button>
+        </form>
+        <section id="output">
+            <div id="caloric-advice" class="health-advice"></div>
+            <div id="bmi-advice" class="bmi-advice"></div>
+            <div id="risk-advice" class="risk-advice"></div>
+            <div id="hospital-advice" class="hospital-advice"></div>
+            <div id="activity-advice" class="activity-advice"></div>
+        </section>
+    </main>
+    <footer>
+        <p>&copy; 2023 Health<span>Mate</span>. Developed with ❤️ by <span>BenMwangi</span>.</p>
+    </footer>
+    <script src="script.js"></script>
+</body>
+</html>
