@@ -1,18 +1,20 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Health Mate</title>
+    <title>Health Detective</title>
     <link rel="stylesheet" href="styles.css">
 </head>
+
 <body>
     <main class="calculator">
-        <h2>Health <span>Detective</span></h2>
+        <h2>Health <span>Detective</span> </h2>
         <form id="estimatorForm">
             <div class="input-group">
                 <label for="name">Name:</label>
-                <input type="text" id="name" required placeholder="Enter your first name">
+                <input type="text" id="name" required placeholder="Enter your name">
             </div>
             <div class="input-group">
                 <label for="age">Age:</label>
@@ -34,7 +36,7 @@
                 <input type="number" id="height" required>
             </div>
             <div class="input-group">
-                <label for="activityLevel">Activineess Level:</label>
+                <label for="activityLevel">Activity Level:</label>
                 <select id="activityLevel" required>
                     <option value="1.2">Sedentary</option>
                     <option value="1.375">Lightly active</option>
@@ -43,7 +45,7 @@
                     <option value="1.9">Super active</option>
                 </select>
             </div>
-            <button type="submit">Feedback</button>
+            <button type="submit">Calculate</button>
         </form>
         <section id="output">
             <div id="caloric-advice" class="health-advice"></div>
@@ -51,11 +53,22 @@
             <div id="risk-advice" class="risk-advice"></div>
             <div id="hospital-advice" class="hospital-advice"></div>
             <div id="activity-advice" class="activity-advice"></div>
+            <div id="meal-advice" class="meal-advice"></div>
+            <table class="meal-plan">
+                <thead>
+                    <tr>
+                        <th>Meal</th>
+                        <th>Food Item</th>
+                    </tr>
+                </thead>
+                <tbody id="meal-plan-content"></tbody>
+            </table>
         </section>
     </main>
     <footer>
-        <p>&copy; 2023 Health<span>Detective</span>. Developed with by Benson<span>Mwangi</span>.</p>
+        <p>&copy; 2023 Health<span>Detective</span>. Developed by Benson<span>Mwangi</span> </p>
     </footer>
     <script src="script.js"></script>
 </body>
+
 </html>
