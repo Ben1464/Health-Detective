@@ -157,7 +157,7 @@ function populateMealPlan(bmi) {
                 <td>No snack you're cutting weight remember!</td>
             </tr>`;
     } else {
-        mealAdvice = "You're categorized as obesed. Here's a calorie-restricted plan to help in weight loss.";
+        mealAdvice = "You're obesed! Here's a calorie-restricted plan to help in weight loss.";
         mealPlanContent = `
             <tr>
                 <td>Breakfast</td>
