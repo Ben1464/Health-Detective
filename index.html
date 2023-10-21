@@ -12,7 +12,8 @@
 <body>
     <main class="calculator">
         <h2>Health <span>Detective</span> </h2>
-        <p><article><b>Fill in with your corret information to get the best personalised health advice according to your BMI and a proposed meal plan to level up</b></article></p>
+        <p><article><b>Fill in with your correct information to get the best personalised health advice according to your BMI and a proposed meal plan to level up. </b></article></p>
+
         <form id="estimatorForm">
             <div class="input-group">
                 <label for="name">Name:</label>
@@ -38,7 +39,7 @@
                 <input type="number" id="height" required>
             </div>
             <div class="input-group">
-                <label for="activityLevel">Activiness Level:</label>
+                <label for="activityLevel">Activeness Level:</label>
                 <select id="activityLevel" required>
                     <option value="1.2">Sedentary</option>
                     <option value="1.375">Lightly active</option>
@@ -49,6 +50,7 @@
             </div>
             <button type="submit">Click to receive feedback</button>
         </form>
+
         <section id="output">
             <div id="caloric-advice" class="health-advice"></div>
             <div id="bmi-advice" class="bmi-advice"></div>
@@ -66,11 +68,20 @@
                 <tbody id="meal-plan-content"></tbody>
             </table>
         </section>
+
+        <!-- Progress tracker section -->
+        <section id="milestones-section">
+            <h3>Your Milestones</h3>
+            <ul id="milestones-list">
+                <!-- Milestones will be populated here -->
+            </ul>
+        </section>
+
     </main>
+
     <footer>
         <p>&copy; 2023 Health<span> Detective </span>. Developed by Benson<span> Mwangi</span> </p>
     </footer>
     <script src="script.js"></script>
 </body>
-
 </html>
