@@ -57,7 +57,7 @@ function provideFeedback(name, bmi, tdee) {
         caloricAdvice += "You are obese! focus on a well-balanced calorie-restricted diet below your TDEE of " + tdee.toFixed(2) + " Cutting down calories can help in achieving a healthier weight. Consultation with a nutritionist or doctor would be beneficial.";
         bmiAdvice = "Based on your BMI, you're OBSESSED!.";
         riskAdvice = "Predisposed risks: Heart diseases, Certain cancers, Liver disease. STOP taking junk food, cut down on sugar, start fasting, intermittent fasting, join a gym before you become a liability to your own self.";
-        hospitalAdvice = "For further medical assistance, consider visiting these hospitals in Kenya:\n- Nairobi Hospital, Nairobi\n- Aga Khan University Hospital, Nairobi\n- Kenyatta National Hospital, Nairobi\n- Mombasa Hospital, Mombasa\n- Eldoret Hospital, Eldoret\n\nRemember to schedule an appointment and verify the availability of relevant specialists. DO FORGET GYM SUBSCRIPTION!";
+        hospitalAdvice = "For further medical assistance, consider visiting these hospitals in Kenya:\n- Nairobi Hospital, Nairobi\n- Aga Khan University Hospital, Nairobi\n- Kenyatta National Hospital, Nairobi\n- Mombasa Hospital, Mombasa\n- Eldoret Hospital, Eldoret\n\nRemember to schedule an appointment and verify the availability of relevant specialists. DO NOT FORGET GYM SUBSCRIPTION!";
     }
 
     caloricAdviceElem.innerText = caloricAdvice;
