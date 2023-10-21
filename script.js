@@ -35,6 +35,7 @@ function provideFeedback(name, bmi, tdee) {
     const hospitalAdviceElem = document.getElementById('hospital-advice');
     const activityAdviceElem = document.getElementById('activity-advice');
 
+    
     let caloricAdvice = `Dear ${name}, `;
     let bmiAdvice = "";
     let riskAdvice = "";
@@ -42,6 +43,7 @@ function provideFeedback(name, bmi, tdee) {
     let activityAdvice = "";
 
     if (bmi < 18.5) {
+        
         caloricAdvice += "Considering your underweight status, it's essential to focus on a nutrient-rich diet that aligns with your TDEE of approximately " + tdee.toFixed(2) + " calories.Increase your generall food intake.";
         bmiAdvice = "Based on your BMI, you're underweight.";
         riskAdvice = "Predisposed risks: Weakened immune system, Osteoporosis, Anemia. Consult a health professional for further diagnistics.";
@@ -57,7 +59,7 @@ function provideFeedback(name, bmi, tdee) {
         hospitalAdvice = "For further medical assistance, consider visiting these hospitals in Kenya:\n- Nairobi Hospital, Nairobi\n- Aga Khan University Hospital, Nairobi\n- Kenyatta National Hospital, Nairobi\n- Mombasa Hospital, Mombasa\n- Eldoret Hospital, Eldoret\n\nRemember to schedule an appointment and verify availability of relevant specialists.";
     } else {
         caloricAdvice += "You are obesed! focus on a well-balanced calorie-restricted diet below your TDEE of " + tdee.toFixed(2) + " Cutting down calories can help in achieving a healthier weight. Consultation with a nutritionist or doctor would be beneficial.";
-        bmiAdvice = "Based on your BMI, you're OBESSED my friend!.";
+        bmiAdvice = "Based on your BMI, you're OBESSED!.";
         riskAdvice = "Predisposed risks: Heart diseases, Certain cancers, Liver disease. STOP taking junk food, cut down on sugar, start fasting,intermintent fastings,join a gym before you become a liablity to your own self.";
         hospitalAdvice = "For further medical assistance, consider visiting these hospitals in Kenya:\n- Nairobi Hospital, Nairobi\n- Aga Khan University Hospital, Nairobi\n- Kenyatta National Hospital, Nairobi\n- Mombasa Hospital, Mombasa\n- Eldoret Hospital, Eldoret\n\nRemember to schedule an appointment and verify availability of relevant specialists. DO FORGET GYM SUBSCRIPTION!";
     }
