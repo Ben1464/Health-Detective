@@ -6,16 +6,17 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Health Detective</title>
     <link rel="stylesheet" href="styles.css">
+    <link rel="icon" type="image/png" sizes="32x32" href="./images/pexels-photo-1229356.webp">
 </head>
 
 <body>
     <main class="calculator">
         <h2>Health <span>Detective</span> </h2>
-        <p><article>Welcom! Fill in with your correct information to get the best health advice and meal plans according to your BIM.</article></p>
+        <p><article><b>Fill in with your corret information to get the best personalised health advice.  Welcome!</b></article></p>
         <form id="estimatorForm">
             <div class="input-group">
                 <label for="name">Name:</label>
-                <input type="text" id="name" required placeholder="Enter your first name">
+                <input type="text" id="name" required placeholder="Enter your name">
             </div>
             <div class="input-group">
                 <label for="age">Age:</label>
@@ -37,7 +38,7 @@
                 <input type="number" id="height" required>
             </div>
             <div class="input-group">
-                <label for="activityLevel">Activity Level:</label>
+                <label for="activityLevel">Activiness Level:</label>
                 <select id="activityLevel" required>
                     <option value="1.2">Sedentary</option>
                     <option value="1.375">Lightly active</option>
@@ -46,7 +47,7 @@
                     <option value="1.9">Super active</option>
                 </select>
             </div>
-            <button type="submit">Feedback</button>
+            <button type="submit">Click to receive feedback</button>
         </form>
         <section id="output">
             <div id="caloric-advice" class="health-advice"></div>

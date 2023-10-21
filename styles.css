@@ -13,149 +13,149 @@ body {
     url(./images/photo-1570829460005-c840387bb1ca.avif);
 }
 
+/* For tablets: if the screen width is between 768px and 1024px */
 @media (min-width: 768px) and (max-width: 1024px) {
     body {
         width: 90%;  /* Adjust width to your preference */
     }
 }
 
+/* For desktops: if the screen width is larger than 1024px */
 @media (min-width: 1025px) {
     body {
         width: 80%;  /* Adjust width to your preference */
     }
 }
 
-.calculator {
-    background: #ffffff;
-    padding: 25px 35px;
-    border-radius: 8px;
-    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
-    width: 90%;
-    max-width: 480px;
-    margin: 20px auto;
-}
+    .calculator {
+        background: #ffffff;
+        padding: 25px 35px;
+        border-radius: 8px;
+        box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+        width: 90%;
+        max-width: 480px;
+        margin: 20px auto;
+    }
 
-h2 {
-    color: #2c3e50;
-    margin-bottom: 20px;
-    text-align: center;
-}
+    h2 {
+        color: #2c3e50;
+        margin-bottom: 20px;
+        text-align: center;
+    }
 
-.input-group {
-    margin-bottom: 20px;
-}
+    .input-group {
+        margin-bottom: 20px;
+    }
 
-label {
-    display: block;
-    font-weight: 600;
-    margin-bottom: 6px;
-    color: #34495e;
-}
+    label {
+        display: block;
+        font-weight: 600;
+        margin-bottom: 6px;
+        color: #34495e;
+    }
 
-input,
-select,
-button {
-    width: 100%;
-    padding: 10px;
-    border: 1px solid #bdc3c7;
-    border-radius: 5px;
-    font-size: 1em;
-    outline: none;
-    transition: border-color 0.3s;
-}
+    input,
+    select,
+    button {
+        width: 100%;
+        padding: 10px;
+        border: 1px solid #bdc3c7;
+        border-radius: 5px;
+        font-size: 1em;
+        outline: none;
+        transition: border-color 0.3s;
+    }
 
-input:focus,
-select:focus {
-    border-color: #3498db;
-}
+    input:focus,
+    select:focus {
+        border-color: #3498db;
+    }
 
-button {
-    background-color: #3498db;
-    color: #ecf0f1;
-    cursor: pointer;
-    transition: background-color 0.3s;
-    margin-top: 10px;
-}
+    button {
+        background-color: #3498db;
+        color: #ecf0f1;
+        cursor: pointer;
+        transition: background-color 0.3s;
+        margin-top: 10px;
+    }
 
-button:hover {
-    background-color: #2980b9;
-}
+    button:hover {
+        background-color: #2980b9;
+    }
 
-#output {
-    margin-top: 30px;
-}
+    #output {
+        margin-top: 30px;
+    }
 
-.health-advice,
-.bmi-advice,
-.activity-advice,
-.risk-advice,
-.hospital-advice,
-.meal-advice {
-    padding: 15px;
-    border-radius: 5px;
-    margin-top: 10px;
-    color: #ffffff;
-    line-height: 1.5;
-}
+    .health-advice,
+    .bmi-advice,
+    .activity-advice,
+    .risk-advice,
+    .hospital-advice,
+    .meal-advice {
+        padding: 15px;
+        border-radius: 5px;
+        margin-top: 10px;
+        color: #ffffff;
+        line-height: 1.5;
+    }
 
-/* Updated colors for advice sections */
+    .health-advice {
+        background-color: #f39c12;
+    }
 
-.health-advice {
-    background-color: #f7a064;  /* softer orange */
-}
+    .bmi-advice {
+        background-color: #2ecc71;
+    }
 
-.bmi-advice {
-    background-color: #4ed480;  /* softer green */
-}
+    .activity-advice {
+        background-color: #3498db;
+    }
 
-.activity-advice {
-    background-color: #5da9db;  /* softer blue */
-}
+    .risk-advice {
+        background-color: #e74c3c;
+    }
 
-.risk-advice {
-    background-color: #e88282;  /* softer red */
-}
+    .hospital-advice {
+        background-color: #9b59b6;
+    }
 
-.hospital-advice {
-    background-color: #af7fbf;  /* softer purple */
-}
+    .meal-advice {
+        background-color: #95a5a6;
+    }
 
-.meal-advice {
-    background-color: #aeb6b7;  /* softer gray */
-}
+    .meal-plan {
+        width: 100%;
+        border-collapse: collapse;
+        margin-top: 10px;
+    }
 
-.meal-plan {
-    width: 100%;
-    border-collapse: collapse;
-    margin-top: 10px;
-}
+    .meal-plan th,
+    .meal-plan td {
+        border: 1px solid #e0e0e0;
+        padding: 8px;
+        text-align: left;
+    }
 
-.meal-plan th,
-.meal-plan td {
-    border: 1px solid #e0e0e0;
-    padding: 8px;
-    text-align: left;
-}
+    .meal-plan th {
+        background-color: #f2f2f2;
+        color: #333;
+    }
 
-.meal-plan th {
-    background-color: #f2f2f2;
-    color: #333;
-}
+    main {
+        flex: 1 0 auto;
+    }
 
-main {
-    flex: 1 0 auto;
-}
+    footer {
+        flex-shrink: 0;
+        width: 100%;
+        padding: 15px 0;
+        background-color: #34495e;
+        color: #ecf0f1;
+        text-align: center;
+    }
 
-footer {
-    flex-shrink: 0;
-    width: 100%;
-    padding: 15px 0;
-    background-color: #34495e;
-    color: #ecf0f1;
-    text-align: center;
-}
-
-span {
-    color: #f39c12;
-    font-weight: bold;
-}
+    span {
+        color: #f39c12;
+        font-weight: bold;
+    }

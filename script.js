@@ -47,11 +47,11 @@ function provideFeedback(name, bmi, tdee) {
         riskAdvice = "Predisposed risks: Weakened immune system, Osteoporosis, Anemia. Consult a health professional for further diagnistics.";
         hospitalAdvice = "For further medical assistance, consider visiting these hospitals in Kenya:\n- Nairobi Hospital, Nairobi\n- Aga Khan University Hospital, Nairobi\n- Kenyatta National Hospital, Nairobi\n- Mombasa Hospital, Mombasa\n- Eldoret Hospital, Eldoret\n\nRemember to schedule an appointment and verify availability of relevant specialists.";
     } else if (bmi >= 18.5 && bmi < 24.9) {
-        caloricAdvice += "As you're in a healthy weight range, ensure you're maintaining a balanced diet,working out and avoiding stress " + tdee.toFixed(2) + " calories.";
+        caloricAdvice += "As you're in a healthy weight range, ensure you're maintaining a balanced diet,working out and avoiding stress. Always ensure you are maintaining your TDEE of approximately " + tdee.toFixed(2) + " calories.";
         bmiAdvice = "Based on your BMI, you're within the normal weight range.";
-        riskAdvice = "Within the healthy weight range you are associated with the lowest health risks. Maintain a balanced diet and active lifestyle.LIVE!";
+        riskAdvice = "Within the healthy weight range you are associated with the lowest health risks. Maintain a balanced diet and live an active life";
     } else if (bmi >= 25 && bmi < 29.9) {
-        caloricAdvice += "Being overweight, it's crucial to watch your diet, stop taking junk food and be more active (workout) " + tdee.toFixed(2) + " calories, and incorporate regular exercise.";
+        caloricAdvice += "Being overweight, it's important you watch your diet,if you dont you will be obessed soon. Stop taking junk food and be more active (workout) " + tdee.toFixed(2) + " calories, and incorporate regular exercise.";
         bmiAdvice = "Based on your BMI, you're overweight.";
         riskAdvice = "Predisposed risks: Heart diseases, High blood pressure, Type 2 diabetes. Consider regular check-ups and be mindful of what you eat.";
         hospitalAdvice = "For further medical assistance, consider visiting these hospitals in Kenya:\n- Nairobi Hospital, Nairobi\n- Aga Khan University Hospital, Nairobi\n- Kenyatta National Hospital, Nairobi\n- Mombasa Hospital, Mombasa\n- Eldoret Hospital, Eldoret\n\nRemember to schedule an appointment and verify availability of relevant specialists.";
@@ -70,7 +70,7 @@ function provideFeedback(name, bmi, tdee) {
     // Activity-based Advice
     switch (activityLevel) {
         case 1.2:
-            activityAdvice = "Since you're sedentary, consider incorporating light exercises into your daily routine.";
+            activityAdvice = "Since you're sedentary, consider incorporating  exercises into your daily routine.";
             break;
         case 1.375:
             activityAdvice = "With your light activity level, ensure you're stretching and maintaining flexibility.";
@@ -119,7 +119,7 @@ function populateMealPlan(bmi) {
                 <td>Yoghurt and a fruit of your choice .</td>
             </tr>`;
     } else if (bmi >= 18.5 && bmi < 24.9) {
-        mealAdvice = "You're in a healthy weight range. Here's a balanced meal plan.";
+        mealAdvice = "You're in a healthy weight range. Here's a balanced meal plan to help you maintain.";
         mealPlanContent = `
             <tr>
                 <td>Breakfast</td>
