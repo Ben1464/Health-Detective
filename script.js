@@ -49,7 +49,7 @@ function provideFeedback(name, bmi, tdee) {
         bmiAdvice = "Based on your BMI, you're within the normal weight range.";
         riskAdvice = "Within the healthy weight range you are associated with the lowest health risks. Maintain a balanced diet and live an active life.";
     } else if (bmi >= 25 && bmi < 29.9) {
-        caloricAdvice += "Being overweight, it's important you watch your diet, if you don't you will be obese soon. Stop taking junk food and be more active (workout) " + tdee.toFixed(2) + " calories, and incorporate regular exercise.";
+        caloricAdvice += "Being overweight, it's important you watch your diet, if you don't you will be obese soon. Stop taking junk food and be more active (workout).Ensure your keep your calories below" + tdee.toFixed(2) + "";
         bmiAdvice = "Based on your BMI, you're overweight.";
         riskAdvice = "Predisposed risks: Heart diseases, High blood pressure, Type 2 diabetes. Consider regular check-ups and be mindful of what you eat.";
         hospitalAdvice = "For further medical assistance, consider visiting these hospitals in Kenya:\n- Nairobi Hospital, Nairobi\n- Aga Khan University Hospital, Nairobi\n- Kenyatta National Hospital, Nairobi\n- Mombasa Hospital, Mombasa\n- Eldoret Hospital, Eldoret\n\nRemember to schedule an appointment and verify the availability of relevant specialists.";
@@ -57,7 +57,7 @@ function provideFeedback(name, bmi, tdee) {
         caloricAdvice += "You are obese! focus on a well-balanced calorie-restricted diet below your TDEE of " + tdee.toFixed(2) + " Cutting down calories can help in achieving a healthier weight. Consultation with a nutritionist or doctor would be beneficial.";
         bmiAdvice = "Based on your BMI, you're OBSESSED!.";
         riskAdvice = "Predisposed risks: Heart diseases, Certain cancers, Liver disease. STOP taking junk food, cut down on sugar, start fasting, intermittent fasting, join a gym before you become a liability to your own self.";
-        hospitalAdvice = "For further medical assistance, consider visiting these hospitals in Kenya:\n- Nairobi Hospital, Nairobi\n- Aga Khan University Hospital, Nairobi\n- Kenyatta National Hospital, Nairobi\n- Mombasa Hospital, Mombasa\n- Eldoret Hospital, Eldoret\n\nRemember to schedule an appointment and verify the availability of relevant specialists. DO FORGET GYM SUBSCRIPTION!";
+        hospitalAdvice = "For further medical assistance, consider visiting these hospitals in Kenya:\n- Nairobi Hospital, Nairobi\n- Aga Khan University Hospital, Nairobi\n- Kenyatta National Hospital, Nairobi\n- Mombasa Hospital, Mombasa\n- Eldoret Hospital, Eldoret\n\nRemember to schedule an appointment and verify the availability of relevant specialists. DO NOT FORGET GYM SUBSCRIPTION!";
     }
 
     caloricAdviceElem.innerText = caloricAdvice;
@@ -106,7 +106,7 @@ function populateMealPlan(bmi) {
                 <td>Rice with beans/peas/njahi, greens, and avocado.</td>
             </tr>
             <tr>
-                <td>Dinner</td>
+                <td>Supper</td>
                 <td>Ugali beef with greens or cabbage of your choice.</td>
             </tr>
             <tr>
