@@ -81,7 +81,7 @@ button:hover {
     margin-top: 30px;
 }
 
-.health-advice, .bmi-advice, .activity-advice, .risk-advice, .hospital-advice, .meal-advice {
+.bmi-advice, .risk-advice, .hospital-advice, .meal-advice {
     padding: 15px;
     border-radius: 5px;
     margin-top: 10px;
@@ -89,16 +89,8 @@ button:hover {
     line-height: 1.5;
 }
 
-.health-advice {
-    background-color: #f39c12;
-}
-
 .bmi-advice {
     background-color: #2ecc71;
-}
-
-.activity-advice {
-    background-color: #3498db;
 }
 
 .risk-advice {
@@ -127,7 +119,6 @@ button:hover {
 
 .meal-plan th {
     background-color: #f2f2f2;
-    color: #333;
 }
 
 main {
@@ -146,29 +137,4 @@ footer {
 span {
     color: #f39c12;
     font-weight: bold;
-}
-
-#milestones-section {
-    background: #f8f9fa;
-    padding: 15px;
-    border-radius: 5px;
-    margin-top: 20px;
-}
-
-#milestones-list {
-    list-style-type: none;
-    padding: 0;
-}
-
-#milestones-list li {
-    padding: 10px;
-    border-bottom: 1px solid #e0e0e0;
-}
-
-#milestones-list li:last-child {
-    border-bottom: none;
-}
-
-#milestones-list li.achieved {
-    background-color: #d4edda;
 }
