@@ -13,6 +13,12 @@ document.getElementById('estimatorForm').addEventListener('submit', function(e) 
 
     const bmi = weight / (height * height);
     provideFeedback(name, bmi);
+
+    // After providing feedback, make the output fade in
+    const outputElem = document.getElementById('output');
+    setTimeout(() => {
+        outputElem.style.opacity = 1;
+    }, 100);
 });
 
 function provideFeedback(name, bmi) {
@@ -55,7 +61,7 @@ function populateMealPlan(bmi) {
 
     days.forEach(day => {
         let breakfast, lunch, supper;
-        
+
         if (bmi < 18.5) {
             breakfast = "2 eggs and a banana smoothie";
             lunch = "Rice with beans/peas, greens, and avocado";
@@ -91,6 +97,7 @@ function populateMealPlan(bmi) {
                 <td>${supper}</td>
             </tr>
         `;
+
     });
 
     mealPlanElem.innerHTML = mealPlanContent;
