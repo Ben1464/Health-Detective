@@ -1,174 +1,72 @@
 body {
-    font-family: 'Arial', sans-serif;
+    font-family: 'Roboto', sans-serif;
     display: flex;
     flex-direction: column;
     min-height: 100vh;
-    background-color: #e9eef1;
-    margin: 0 auto;  /* This centers the body's content */
+    background-color: #16181b;
+    margin: 0 auto;
     padding: 0;
-    width: 100%;  /* Default width */
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-image: linear-gradient(rgba(255, 255, 255, 0.3), rgba(255, 255, 255, 0.3)), url(./images/photo-1570829460005-c840387bb1ca.avif);
-}
-
-@media (min-width: 768px) and (max-width: 1024px) {
-    body {
-        width: 90%;
-    }
-}
-
-@media (min-width: 1025px) {
-    body {
-        width: 80%;
-    }
+    width: 100%;
+    background-image: linear-gradient(120deg, #84fab0 0%, #8fd3f4 100%);
 }
 
 .calculator {
-    background: #ffffff;
+    background: rgba(255, 255, 255, 0.1);
     padding: 25px 35px;
-    border-radius: 8px;
-    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+    border-radius: 12px;
+    box-shadow: 0 5px 30px rgba(0, 0, 0, 0.3);
     width: 90%;
     max-width: 480px;
-    margin: 20px auto;
+    margin: 50px auto;
+    backdrop-filter: blur(5px);
 }
 
-h2 {
-    color: #2c3e50;
-    margin-bottom: 20px;
+h2, h3, footer p {
     text-align: center;
+    color: #fff;
 }
 
-.input-group {
+label, input, select, button {
+    width: 100%;
+    padding: 12px;
+    border: none;
+    border-radius: 8px;
+    font-size: 1em;
+    transition: all 0.3s;
     margin-bottom: 20px;
 }
 
-label {
-    display: block;
-    font-weight: 600;
-    margin-bottom: 6px;
-    color: #34495e;
-}
-
-input, select, button {
-    width: 100%;
-    padding: 10px;
-    border: 1px solid #bdc3c7;
-    border-radius: 5px;
-    font-size: 1em;
+input:focus, select:focus, button:focus {
     outline: none;
-    transition: border-color 0.3s;
-}
-
-input:focus, select:focus {
-    border-color: #3498db;
+    transform: scale(1.05);
+    box-shadow: 0 0 15px rgba(52, 152, 219, 0.8);
 }
 
 button {
     background-color: #3498db;
     color: #ecf0f1;
     cursor: pointer;
-    transition: background-color 0.3s;
-    margin-top: 10px;
+    transition: all 0.3s;
+    border: 2px solid transparent;
 }
 
 button:hover {
-    background-color: #2980b9;
+    background-color: transparent;
+    border: 2px solid #3498db;
 }
 
 #output {
     margin-top: 30px;
-}
-
-.health-advice, .bmi-advice, .activity-advice, .risk-advice, .hospital-advice, .meal-advice {
-    padding: 15px;
-    border-radius: 5px;
-    margin-top: 10px;
-    color: #ffffff;
-    line-height: 1.5;
-}
-
-.health-advice {
-    background-color: #f39c12;
-}
-
-.bmi-advice {
-    background-color: #2ecc71;
-}
-
-.activity-advice {
-    background-color: #3498db;
-}
-
-.risk-advice {
-    background-color: #e74c3c;
-}
-
-.hospital-advice {
-    background-color: #9b59b6;
-}
-
-.meal-advice {
-    background-color: #95a5a6;
-}
-
-.meal-plan {
-    width: 100%;
-    border-collapse: collapse;
-    margin-top: 10px;
+    opacity: 0;
+    transition: opacity 0.5s;
 }
 
 .meal-plan th, .meal-plan td {
-    border: 1px solid #e0e0e0;
-    padding: 8px;
-    text-align: left;
-}
-
-.meal-plan th {
-    background-color: #f2f2f2;
-    color: #333;
-}
-
-main {
-    flex: 1 0 auto;
+    background-color: rgba(255, 255, 255, 0.2);
 }
 
 footer {
-    flex-shrink: 0;
-    width: 100%;
     padding: 15px 0;
-    background-color: #34495e;
-    color: #ecf0f1;
-    text-align: center;
-}
-
-span {
-    color: #f39c12;
-    font-weight: bold;
-}
-
-#milestones-section {
-    background: #f8f9fa;
-    padding: 15px;
-    border-radius: 5px;
-    margin-top: 20px;
-}
-
-#milestones-list {
-    list-style-type: none;
-    padding: 0;
-}
-
-#milestones-list li {
-    padding: 10px;
-    border-bottom: 1px solid #e0e0e0;
-}
-
-#milestones-list li:last-child {
-    border-bottom: none;
-}
-
-#milestones-list li.achieved {
-    background-color: #d4edda;
+    background-color: rgba(52, 73, 94, 0.9);
+    backdrop-filter: blur(10px);
 }

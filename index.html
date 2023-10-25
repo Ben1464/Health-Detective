@@ -5,19 +5,22 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Health Detective</title>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="styles.css">
     <link rel="icon" type="image/png" sizes="32x32" href="./images/pexels-photo-1229356.webp">
 </head>
 
 <body>
     <main class="calculator">
-        <h2>Health <span>Detective</span> </h2>
-        <p><article><b>Fill in with accurate details to receive tailored health advice based on your BMI, a suggested meal plan for improvement, and track your milestones.  </b></article></p>
+        <h2>Health <span>Detective</span></h2>
+        <p>
+            <article><b>Fill in with accurate details to receive tailored health advice based on your BMI and a suggested meal plan for improvement.</b></article>
+        </p>
 
         <form id="estimatorForm">
             <div class="input-group">
                 <label for="name">Name:</label>
-                <input type="text" id="name" required placeholder="Enter your  first name">
+                <input type="text" id="name" required placeholder="Enter your first name">
             </div>
             <div class="input-group">
                 <label for="age">Age:</label>
@@ -38,27 +41,14 @@
                 <label for="height">Height (cm):</label>
                 <input type="number" id="height" required>
             </div>
-            <div class="input-group">
-                <label for="activityLevel">Activeness Level:</label>
-                <select id="activityLevel" required>
-                    <option value="1.2">Sedentary</option>
-                    <option value="1.375">Lightly active</option>
-                    <option value="1.55">Moderately active</option>
-                    <option value="1.725">Very active</option>
-                    <option value="1.9">Super active</option>
-                </select>
-            </div>
             <button type="submit">Click to receive feedback</button>
         </form>
 
         <section id="output">
-            <div id="caloric-advice" class="health-advice"></div>
             <div id="bmi-advice" class="bmi-advice"></div>
             <div id="risk-advice" class="risk-advice"></div>
-            <div id="hospital-advice" class="hospital-advice"></div>
-            <div id="activity-advice" class="activity-advice"></div>
             <div id="meal-advice" class="meal-advice"></div>
-            <h3>Proposed meal plan. </h3>
+            <h3>Proposed weekly meal plan.</h3>
             <table class="meal-plan">
                 <thead>
                     <tr>
@@ -68,20 +58,13 @@
                 </thead>
                 <tbody id="meal-plan-content"></tbody>
             </table>
+            <h3>Proposed hospitals for further medical advice.</h3>
+            <div id="hospital-advice" class="hospital-advice"></div>
         </section>
-
-        <!-- Progress tracker section -->
-        <section id="milestones-section">
-            <h3>Your Milestones.</h3>
-            <ul id="milestones-list">
-                <!-- Milestones will be populated here -->
-            </ul>
-        </section>
-
     </main>
 
     <footer>
-        <p>&copy; 2023 Health<span> Detective </span>. Developed by Benson<span> Mwangi</span> </p>
+        <p>&copy; 2023 Health<span> Detective </span>. Developed by Benson<span> Mwangi</span></p>
     </footer>
     <script src="script.js"></script>
 </body>
